@@ -9,15 +9,15 @@ show_full_navigation: true
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product documentation template for Jekyll.
+description: Traditional Japanese Poems - Waka
 author:
   name:
   email:
-  twitter: # twitter username without the @ symbol
+  twitter: 31_bot
 social:
   name: Edition Template
   links:
-    - https://github.com/CloudCannon/edition-jekyll-template
+    - https://github.com/31bot
 
 # -----
 # Build
