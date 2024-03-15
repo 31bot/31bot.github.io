@@ -52,7 +52,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "古今和歌集"
+      type: "docs"
     values:
       seo:
         type: Article
