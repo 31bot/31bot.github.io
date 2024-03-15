@@ -22,7 +22,7 @@ social:
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: Tokyo/JST
 
 permalink: pretty
 
@@ -52,7 +52,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "docs"
+      type: "古今和歌集"
     values:
       seo:
         type: Article
@@ -71,8 +71,6 @@ defaults:
       _comments:
         type: Marks the impact of this release
 
-# -----------
-# CloudCannon
 
 types:
   - minor
