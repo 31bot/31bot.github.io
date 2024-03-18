@@ -13,12 +13,12 @@ description: Traditional Japanese Poems - Waka
 author:
   name:
   email:
-  twitter: @31_bot
+  twitter: 31_bot
 social:
   name: 31bot github
   links:
-    - https://twitter.com/31_bot
-      
+    - https://github.com/31bot
+      https://twitter.com/31_bot
 
 # -----
 # Build
