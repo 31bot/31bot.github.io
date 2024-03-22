@@ -5,7 +5,7 @@ title: ご案内
 三十一文字は、
 
 * 日本の和歌の古典を蒐集し
-* Twitter・BlueskyなどのSNSで定期的につぶやく
+* twitter・blueskyなどのSNSで定期的につぶやく
 
 などを目標にしたプロジェクトです。
 
@@ -24,18 +24,6 @@ title: ご案内
 * [三十一文字bot twitter](https://twitter.com/31_bot)
 * [三十一文字bot bluesky](https://bsky.app/profile/31bot.bsky.social)
 
-#### h4ブロック
-あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-##### h5ブロック
-あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-###### h6ブロック
-あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-
-[URL](https://31bot.github.io/)
-
-```yaml
-code: text
-```
-
-
+### 問い合わせは？
+[twitter](https://twitter.com/31_bot)や[bluesky](https://bsky.app/profile/31bot.bsky.social)のDM、[github](https://31bot.github.io/)からご連絡ください。
 
