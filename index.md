@@ -24,6 +24,19 @@ title: ご案内
 * [三十一文字bot twitter](https://twitter.com/31_bot)
 * [三十一文字bot bluesky](https://bsky.app/profile/31bot.bsky.social)
 
+### 底本はなんですか？
+古今和歌集は[Wikisource](https://ja.wikisource.org/wiki/古今和歌集)を下敷きにしています。
+
+### ライセンスについて
+往年の国産のライセンス、NYSL (煮るなり焼くなり好きにしろライセンス)を採用しています。
+「煮るなり焼くなり好きにしろ」とは言いますが、Wikisourceを下敷きに編集が入っていることに留意した上で、自由にお使いください。
+
+### 各種環境を教えてください
+* データ・WEBサイトの公開はGitHub Pages (Jekyll)
+* プログラムはRuby
+* データはYAML
+です。
+
 ### 問い合わせは？
 [twitter](https://twitter.com/31_bot)や[bluesky](https://bsky.app/profile/31bot.bsky.social)のDM、[github](https://31bot.github.io/)からご連絡ください。
 
