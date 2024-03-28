@@ -18,10 +18,11 @@ author:
   email:
   twitter: 31_bot
 social:
-  name: 31bot github
+  name: 三十一文字bot
   links:
     - https://github.com/31bot
-      https://twitter.com/31_bot
+    - https://twitter.com/31_bot
+    - https://bsky.app/profile/31bot.bsky.social
 
 # -----
 # Build
