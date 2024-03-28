@@ -40,3 +40,9 @@ title: ご案内
 ### 問い合わせは？
 [twitter](https://twitter.com/31_bot)や[bluesky](https://bsky.app/profile/31bot.bsky.social)のDM、[github](https://31bot.github.io/)からご連絡ください。
 
+
+### ロゴはなんですか？
+水に檜扇紋です。
+
+### OGP (Twitter Card)の画像は？
+[国文研 国書データベース](https://kokusho.nijl.ac.jp/biblio/200003050/)さんの古今和歌集から、仮名序の「今の世の中」のくだりです。
