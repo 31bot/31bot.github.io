@@ -1,6 +1,6 @@
 ---
 title: ご案内
-image: /OGP.png
+image: https://31bot.github.io/OGP.png
 ---
 
 三十一文字は、
