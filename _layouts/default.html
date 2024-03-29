@@ -51,21 +51,28 @@
 					</li>
 				</ul>
 
+
+
+
 				<ul>
-					{% assign grouped = site.docs | group_by: 'category' %}
-					{% for group in grouped %}
-						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-							{% assign items = group.items | sort: 'order' %}
-							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
+						<li class="nav-item top-level ">
+							<a href="{{ site.baseurl }}/kokinwakashu/preface">古今和歌集</a>
 							<ul>
-								{% for item in items %}
-									<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-								{% endfor %}
+								{% assign grouped = site.kokinwakashu %}
+								{% for group in grouped %}
+									<li class="nav-item {% if group.url == page.url %}current{% endif %}">
+										<a href="{{ site.baseurl }}{{ group.url }}">{{ group.label }}</a>
 							</ul>
+							
 						</li>
 					{% endfor %}
 				</ul>
 
+
+
+
+				
+				
 				<ul>
 					<li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
 						{% assign changelog = site.html_pages | where: 'url', '/changelog/' | first %}
@@ -77,8 +84,7 @@
 
 		<section class="main">
 			<div class="page-header">
-				<h2>{% if page.category %}{{ page.category }}{% else %}{{  }}{% endif %}</h2>
-				<h3>{{ page.title }}</h3>
+				<h2>{% if page.collection %}{{ page.label }}{% else %}{{ '' }}{% endif %}</h2>
 			</div>
 			<article class="content">
 				{{ content }}
@@ -90,5 +96,49 @@
 				document.body.classList.toggle("nav-open");
 			});
 		</script>
+
+
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+
+  {% if page.collection %}
+    {% assign  document = site[the_collection] %}
+  {% endif %}
+
+{% for links in document  %}
+  {% if links.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+    {% endunless %}
+    {% unless your_collection_name.last.url %}
+      {% assign next = document[forloop.index] %}
+      {% assign nexturl = next.url %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = links %}
+  {% if page.collection %}
+    {% assign  document = site[the_collection] %}
+  {% endif %}
+
+{% for links in document  %}
+  {% if links.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+    {% endunless %}
+    {% unless your_collection_name.last.url %}
+      {% assign next = document[forloop.index] %}
+      {% assign nexturl = next.url %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = links %}
+{% endfor %}{% endfor %}
+<footer class="pagination">
+	<span class="previous">
+		{% if prevurl %}<a href="{{ prevurl }}">< {{ page.previous.label }}</a>{% endif %}
+	</span>
+	<span class="next">
+		{% if nexturl %}<a href="{{ nexturl }}">{{ page.next.label }} ></a>{% endif %}		
+	</span>
+</div>
+		
 	</body>
 </html>

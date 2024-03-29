@@ -53,6 +53,8 @@ defaults:
       path: ""
     values:
       layout: default
+      image: https://31bot.github.io/OGP.png
+      locale: ja_JP
   -
     scope:
       path: ""
@@ -83,3 +85,17 @@ types:
 
 
 languages: ["ja"]
+
+
+collections:
+  kokinwakashu:
+    order:
+      - preface.md
+      - vol1.md
+      - vol2.md
+      - vol3.md
+      - vol4.md
+      - vol5.md
+    output: true
+  gosenwakashu:
+    output: true

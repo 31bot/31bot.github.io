@@ -463,3 +463,14 @@ img {
 .cms-editor-active .editor-link {
 	display: block;
 }
+
+
+.pagenation {}
+.previous {
+	position: absolute;
+	right: 40%;
+}
+.next {
+	position: absolute;
+	left: 60%;
+}
