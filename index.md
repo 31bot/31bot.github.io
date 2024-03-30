@@ -49,7 +49,7 @@ Twitterの文字数制限は日本語だと140文字です。詠み人・詞書(
 「煮るなり焼くなり好きにしろ」とは言いますが、Wikisourceを下敷きに編集が入っていることに留意した上で、ご自由にお使いください。
 
 ### 各種環境を教えてください
-* データ・WEBサイトの公開はGitHub Pages (Jekyll)
+* データ・WEBサイトの公開はGitHub、GitHub Pages (Jekyll)
 * プログラムはRuby
 * データはYAML
 です。
