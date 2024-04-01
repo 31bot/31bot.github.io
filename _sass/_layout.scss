@@ -69,7 +69,8 @@ body {
 
 .main {
 	margin-top: $space + $nav-header-height;
-
+	padding: 2em;
+	
 	@media (min-width: $mobile-break) {
 		margin-top: 0;
 	}
@@ -465,12 +466,62 @@ img {
 }
 
 
-.pagenation {}
+.pagenation {
+	position:fixed;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
 .previous {
 	position: absolute;
-	right: 40%;
+	right: 50%;
 }
 .next {
 	position: absolute;
-	left: 60%;
+	left: 50%;
+}
+
+
+.wakas {
+	list-style: none;
+	padding: 0;
+}
+
+.waka {
+	list-style: none;
+	padding: 0 2em;
+	border-left: 5px solid #d7ebc3;
+}
+
+.w_num {
+	font-size: 150%;
+	display: inline-block;
+}
+.w_author {
+	font-size: 120%;
+	margin-left: 1em;
+	display: inline-block;
+	vertical-align: top;
+}
+.w_kotobagaki 
+{
+	font-size: 100%;
+	text-align: right;
+	margin-left:17%;
+	padding: 5px;
+/*	background-color: #d7ebc3; */
+	background-color: #E9F5D4;
+}
+
+.w_waka {
+	font-size: 140%;
+	line-height: 140%;
+	padding: 0;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-left: 1em;
+	text-align-last: right; 
 }

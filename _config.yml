@@ -92,7 +92,7 @@ collections:
     order:
       - preface.md
       - vol1.md
-      - vol2.md
+      - vol2.html
       - vol3.md
       - vol4.md
       - vol5.md
