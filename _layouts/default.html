@@ -57,14 +57,11 @@
 				<ul>
 						<li class="nav-item top-level ">
 							<a href="{{ site.baseurl }}/kokinwakashu/preface">古今和歌集</a>
-							<ul>
-								{% assign grouped = site.kokinwakashu %}
-								{% for group in grouped %}
-									<li class="nav-item {% if group.url == page.url %}current{% endif %}">
-										<a href="{{ site.baseurl }}{{ group.url }}">{{ group.label }}</a>
-									</li>
-							</ul>
-							
+						</li>
+					{% assign grouped = site.kokinwakashu %}
+					{% for group in grouped %}
+						<li class="nav-item {% if group.url == page.url %}current{% endif %}">
+							<a href="{{ site.baseurl }}{{ group.url }}">{{ group.label }}</a>
 						</li>
 					{% endfor %}
 				</ul>
