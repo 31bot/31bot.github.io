@@ -495,10 +495,12 @@ img {
 }
 
 .w_num {
+	list-style: none;
 	font-size: 150%;
 	display: inline-block;
 }
 .w_author {
+	list-style: none;
 	font-size: 120%;
 	margin-left: 1em;
 	display: inline-block;
@@ -506,6 +508,7 @@ img {
 }
 .w_kotobagaki 
 {
+	list-style: none;
 	font-size: 100%;
 	text-align: right;
 	margin-left:17%;
@@ -515,6 +518,7 @@ img {
 }
 
 .w_waka {
+	list-style: none;
 	font-size: 140%;
 	line-height: 140%;
 	padding: 0;
