@@ -1,4 +1,5 @@
 ---
+title: 古今和歌集　序
 label: 序
 image: https://31bot.github.io/OGP.png
 order: 1
