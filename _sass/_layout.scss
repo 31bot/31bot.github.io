@@ -245,16 +245,17 @@ nav > ul {
 		display: block;
 	}
 
-	&.current > a {
-		color: #292b26;
-		background-color: #c2d6ae;
-	}
 
 	> a:active,
 	> a:hover {
 		color: #292b26;
+		background-color: #CFDBC5;
 	}
 
+	&.current > a {
+		color: #292b26;
+		background-color: #c2d6ae;
+	}
 
 	&.top-level > a {
 		line-height: 1.5;
