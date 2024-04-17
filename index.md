@@ -1,6 +1,7 @@
 ---
 title: ご案内
 image: https://31bot.github.io/OGP.png
+description: 31bot トップページ
 ---
 
 三十一文字は、
