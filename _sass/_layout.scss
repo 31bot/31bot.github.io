@@ -3,8 +3,10 @@ input::-ms-reveal {
 	display: none !important;
 }
 
+html{font-size: 12px;}
+body{font-size: 16px;}
+
 body {
-	font-size: 16px;
 	height: auto;
 	overflow-x: hidden;
 	background-color: $body-background-color;
@@ -468,13 +470,17 @@ img {
 }
 
 
-.pagenation {
-	position:fixed;
+.pagination {
+	position: fixed;
+	bottom: 0;
+	height: 2em;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	height: 100%;
+	background-color: #EBEEF1;
 }
+
+/*
 .previous {
 	position: absolute;
 	right: 50%;
@@ -483,7 +489,15 @@ img {
 	position: absolute;
 	left: 50%;
 }
-
+*/
+.previous {
+	position: absolute;
+	right: 50%;
+}
+.next {
+	position: absolute;
+	left: 50%;
+}
 
 .wakas {
 	list-style: none;
@@ -529,15 +543,16 @@ img {
 
 .w_waka {
 	list-style: none;
-	font-size: 140%;
-	line-height: 140%;
-	padding: 0.6em;
 	margin-block-start: 1rem;
 	margin-block-end: 1rem;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
-	padding-left: 1em;
-	text-align-last: right; 
 	background-color: #EBEEF1;
 	border-radius: 0.5em;
+	line-height: 140%;
+	font-size: 140%;
+	padding: 0.6em 1.2em 0.6em 2.4em;
+	text-align-last: right;
+	text-indent: -1em
 }
+
