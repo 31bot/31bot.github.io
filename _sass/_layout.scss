@@ -506,8 +506,10 @@ img {
 
 .waka {
 	list-style: none;
-	padding: 0 2em;
+	padding: 1em 2em;
 	border-left: 5px solid #d7ebc3;
+	background-color: #C9E09A;
+	border-radius: 2rem;
 }
 
 .w_num {
@@ -529,7 +531,7 @@ img {
 	text-align: right;
 	margin-left:17%;
 	padding: 5px;
-	background-color: #E9F5D4;
+/*	background-color: #E9F5D4; */
 }
 .w_kai
 {
@@ -538,7 +540,7 @@ img {
 	text-align: left;
 	margin-left:17%;
 	padding: 5px;
-	background-color: #E9F5D4;
+/*	background-color: #E9F5D4; */
 }
 
 .w_waka {
@@ -553,6 +555,7 @@ img {
 	font-size: 140%;
 	padding: 0.6em 1.2em 0.6em 2.4em;
 	text-align-last: right;
-	text-indent: -1em
+	text-indent: -1em;
+	
 }
 
