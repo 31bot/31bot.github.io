@@ -7,6 +7,7 @@ html{font-size: 12px;}
 body{font-size: 16px;}
 
 body {
+	width: auto;
 	height: auto;
 	overflow-x: hidden;
 	background-color: $body-background-color;
@@ -191,8 +192,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 		letter-spacing: 0;
 		padding: 0.5rem 1.5rem;
 		border-radius: 1rem;
-		background-color: #B1CA7F;
-
+		background-color: #B7CB8D;
 	}
 
 	h3 {
@@ -481,29 +481,40 @@ img {
 	bottom: 0;
 	height: 2em;
 	width: 100%;
-	padding: 0;
+	padding: auto;
 	margin: 0;
 	background-color: #EBEEF1;
+	text-align:  center;
 }
 
-/*
+
 .previous {
-	position: absolute;
-	right: 50%;
+position: absolute;
+right: 50%;
 }
 .next {
-	position: absolute;
-	left: 50%;
+position: absolute;
+left: 50%;
 }
-*/
-.previous {
-	position: absolute;
-	right: 50%;
+
+@media (min-width: $mobile-break) {
+	.pagination {
+		z-index: 999;
+	}
+	.previous {
+		position: relative;
+		/* 本来なら変数を使うべきところ、決め打ちする */
+		right: 160px;
+	}
+	.next {
+		/* 本来なら変数を使うべきところ、決め打ちする */
+		position: relative;
+		left: -160px;
+	}
 }
-.next {
-	position: absolute;
-	left: 50%;
-}
+
+
+
 
 .wakas {
 	list-style: none;
@@ -515,7 +526,7 @@ img {
 	padding: 1em 2em;
 	border-left: 5px solid #d7ebc3;
 	border-radius: 2rem;
-	background-color: #C9E09A;
+	background-color: #B7CB8D;
 }
 
 .w_num {
@@ -555,7 +566,7 @@ img {
 	margin-block-end: 1rem;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
-	background-color: #EBEEF1;
+	background-color: #EBE6F1;
 	border-radius: 0.5em;
 	line-height: 140%;
 	font-size: 140%;
