@@ -522,11 +522,13 @@ img {
 	list-style: none;
 	font-size: 140%;
 	line-height: 140%;
-	padding: 0;
+	padding: 0.6em;
 	margin-block-start: 1em;
 	margin-block-end: 1em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 	padding-left: 1em;
 	text-align-last: right; 
+	background-color: #E0E6F1;
+	border-radius: 0.5em;
 }
