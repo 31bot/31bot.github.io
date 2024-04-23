@@ -172,7 +172,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 .page-header {
 	max-width: $content-max-width;
 	padding: 0 ($space + 5) $space;
-	margin: $space auto 0 auto;
+	margin: 0 auto;
 }
 
 .page-header {
@@ -566,7 +566,7 @@ left: 50%;
 	margin-block-end: 1rem;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
-	background-color: #EBE6F1;
+	background-color: #d4e6c7;
 	border-radius: 0.5em;
 	line-height: 140%;
 	font-size: 140%;
