@@ -91,12 +91,3 @@ collections:
     output: true
   gosenwakashu:
     output: true
-
-
-defaults:
-  -
-    scope:
-      path: "kokinwakashu/*"
-    values:
-      layout: "single-layout"
-
