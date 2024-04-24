@@ -55,9 +55,10 @@
 						<a href="{{ site.baseurl }}/kokinwakashu/preface">古今和歌集</a>
 					</li>
 					{% assign grouped = site.kokinwakashu %}
+					{% capture dir %}/kokinwakashu/{{ page.book }}/{% endcapture %}
 					{% for group in grouped %}
 						{% if group.books == 'kokinwakashu' %}
-							<li class="nav-item {% if group.url == page.url %}current{% endif %}">
+							<li class="nav-item {% if group.url == dir %}current{% endif %}">
 								<a href="{{ site.baseurl }}{{ group.url }}">{{ group.label }}</a>
 							</li>
 						{% endif %}
@@ -65,12 +66,6 @@
 					
 				</ul>
 				
-
-				
-			</ul>
-
-
-
 				
 				
 			</nav>
