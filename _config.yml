@@ -88,9 +88,6 @@ languages: ["ja"]
 
 
 sections:
-  order:
-      kokinwakashu
-      gosenwakashu
   kokinwakashu:
     order:
       - preface.md
