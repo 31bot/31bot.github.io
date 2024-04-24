@@ -51,6 +51,16 @@ defaults:
       image: https://31bot.github.io/OGP.png
       locale: ja_JP
 
+defaults:
+  -
+    scope:
+      path: "*/*/"
+    values:
+      layout: single-layout.html
+      image: https://31bot.github.io/OGP.png
+      locale: ja_JP
+
+
 types:
   - minor
   - major
