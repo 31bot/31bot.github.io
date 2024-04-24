@@ -50,8 +50,6 @@ defaults:
       layout: default
       image: https://31bot.github.io/OGP.png
       locale: ja_JP
-
-defaults:
   -
     scope:
       path: "*/*/"
