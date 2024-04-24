@@ -61,6 +61,12 @@
 						</li>
 					{% endfor %}
 					
+					{% assign grouped = site.collections %}
+					{% for group in grouped %}
+						<li class="nav-item {% if group.url == page.url %}current{% endif %}">
+							<a href="{{ site.baseurl }}{{ group.url }}">{{ group.title }}</a>
+						</li>
+					{% endfor %}
 					
 				</ul>
 				
