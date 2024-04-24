@@ -52,7 +52,7 @@ defaults:
       locale: ja_JP
   -
     scope:
-      path: "*/*/"
+      path: ""
     values:
       layout: single-layout
       image: https://31bot.github.io/OGP.png

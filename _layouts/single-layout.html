@@ -92,33 +92,15 @@
 		</script>
 
 
-{% capture the_collection %}{{page.collection}}{% endcapture %}
 
-  {% if page.collection %}
-    {% assign  document = site[the_collection] %}
-  {% endif %}
 
-{% for links in document  %}
-  {% if links.title == page.title %}
-    {% unless forloop.first %}
-      {% assign prevurl = prev.url %}
-    {% endunless %}
-    {% unless your_collection_name.last.url %}
-      {% assign next = document[forloop.index] %}
-      {% assign nexturl = next.url %}
-    {% endunless %}
-  {% endif %}
-  {% assign prev = links %}
-  {% if page.collection %}
-    {% assign  document = site[the_collection] %}
-  {% endif %}
 
 <div class="pagination">
 	<span class="previous">
-		{% if page.prev_url %}<a href="{{ page.prev_url }}">< {{ page.prev_label }}</a>　{% endif %}
+		{% if page.prev_url %}<a href="../{{ page.prev_url }}">< {{ page.prev_label }}</a>　{% endif %}
 	</span>
 	<span class="next">
-		{% if page.next_url %}　<a href="{{ page.next_url }}">{{ page.next_label }} ></a>{% endif %}
+		{% if page.next_url %}　<a href="../{{ page.next_url }}">{{ page.next_label }} ></a>{% endif %}
 	</span>
 </div>
 		
