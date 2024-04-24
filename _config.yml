@@ -56,27 +56,6 @@ defaults:
       image: https://31bot.github.io/OGP.png
       locale: ja_JP
   -
-    scope:
-      path: ""
-      type: "docs"
-    values:
-      seo:
-        type: Article
-      _comments:
-        category: Group navigation links with this field
-        order: Used to sort links in the navigation
-      _options:
-        content:
-          width: 800
-          height: 2000
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      _comments:
-        type: Marks the impact of this release
-
 
 types:
   - minor
