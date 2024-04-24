@@ -94,27 +94,27 @@ sections:
   kokinwakashu:
     order:
       - preface.md
-      - vol1.md
+      - vol1.html
       - vol2.html
-      - vol3.md
-      - vol4.md
-      - vol5.md
-      - vol6.md
-      - vol7.md
-      - vol8.md
-      - vol9.md
-      - vol10.md
-      - vol11.md
-      - vol12.md
-      - vol13.md
-      - vol14.md
-      - vol15.md
-      - vol16.md
-      - vol17.md
-      - vol18.md
-      - vol19.md
-      - vol20.md
-      - bokumetsuka.md
+      - vol3.html
+      - vol4.html
+      - vol5.html
+      - vol6.html
+      - vol7.html
+      - vol8.html
+      - vol9.html
+      - vol10.html
+      - vol11.html
+      - vol12.html
+      - vol13.html
+      - vol14.html
+      - vol15.html
+      - vol16.html
+      - vol17.html
+      - vol18.html
+      - vol19.html
+      - vol20.html
+      - bokumetsuka.html
     output: true
   gosenwakashu:
     output: true
