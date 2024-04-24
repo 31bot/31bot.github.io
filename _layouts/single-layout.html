@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="MD_Je8Mr5-eLIZJnZQwlQvSS45c0fVD_t4Pw9WZSF7o" />
+
+		{% seo %}
+		{% feed_meta %}
+<!--
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+-->
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" sizes="any" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+		<link rel="manifest" href="/manifest.webmanifest">
+
+		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics_key }}', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+		{% endif %}
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/emblem.svg" width="80" height="80" alt="{{ site.title }} logo"></a>
+				{{ site.title }}
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<nav {% if site.show_full_navigation %}class="full-navigation"{% endif %}>
+				<ul>
+					<li class="nav-item top-level {% if page.url == '/' %}current{% endif %}">
+						{% assign home = site.html_pages | where: 'url', '/' | first %}
+						<a href="{{ site.baseurl }}/">{{ home.title }}</a>
+					</li>
+				</ul>
+
+
+
+
+				<ul>
+					<li class="nav-item top-level ">
+						<a href="{{ site.baseurl }}/kokinwakashu/preface">古今和歌集</a>
+					</li>
+					{% assign grouped = site.kokinwakashu %}
+					{% for group in grouped %}
+						{% if group.books == 'kokinwakashu' %}
+							<li class="nav-item {% if group.url == page.url %}current{% endif %}">
+								<a href="{{ site.baseurl }}{{ group.url }}">{{ group.label }}</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+					
+				</ul>
+				
+
+				
+			</ul>
+
+
+
+				
+				
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>{% if page.collection %}古今和歌集: {{ page.label }}{% else %}{{ '' }}{% endif %}</h2>
+			</div>
+			<article class="content">
+				{{ content }}
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+
+
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+
+  {% if page.collection %}
+    {% assign  document = site[the_collection] %}
+  {% endif %}
+
+{% for links in document  %}
+  {% if links.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+    {% endunless %}
+    {% unless your_collection_name.last.url %}
+      {% assign next = document[forloop.index] %}
+      {% assign nexturl = next.url %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = links %}
+  {% if page.collection %}
+    {% assign  document = site[the_collection] %}
+  {% endif %}
+
+<div class="pagination">
+	<span class="previous">
+		{% if page.prev_url %}<a href="{{ page.prev_url }}">< {{ page.next_label }}</a>　{% endif %}
+	</span>
+	<span class="next">
+		{% if page.next_url %}　<a href="{{ page.next_url }}">{{ page.next_label }} ></a>{% endif %}		
+	</span>
+</div>
+		
+	</body>
+</html>

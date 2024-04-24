@@ -50,7 +50,6 @@ defaults:
       layout: default
       image: https://31bot.github.io/OGP.png
       locale: ja_JP
-  -
 
 types:
   - minor
@@ -92,3 +91,12 @@ collections:
     output: true
   gosenwakashu:
     output: true
+
+
+defaults:
+  -
+    scope:
+      path: "section/*/*"
+    values:
+      layout: "single-layout"
+
