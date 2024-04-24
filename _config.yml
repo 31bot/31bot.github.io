@@ -41,11 +41,6 @@ exclude:
   - README.md
   - LICENCE
 
-collections:
-  docs:
-    title: Documentation
-    permalink: /:path/
-    output: true
 
 defaults:
   -
@@ -78,6 +73,9 @@ collections:
       - vol6.html
       - vol7.html
       - vol8.html
+        -365.html
+        -366.html
+        -367.html
       - vol9.html
       - vol10.html
       - vol11.html
