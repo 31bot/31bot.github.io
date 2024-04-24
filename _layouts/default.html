@@ -52,6 +52,7 @@
 
 				<ul>
 					<li class="nav-item top-level ">
+site.baseurl: {{ site.baseurl }}
 						<a href="{{ site.baseurl }}/kokinwakashu/preface">古今和歌集</a>
 					</li>
 					{% assign grouped = site.kokinwakashu %}
@@ -60,7 +61,7 @@
 							<a href="{{ site.baseurl }}{{ group.url }}">{{ group.label }}</a>
 						</li>
 					{% endfor %}
-										
+					
 				</ul>
 				
 
