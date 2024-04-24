@@ -87,7 +87,10 @@ types:
 languages: ["ja"]
 
 
-collections:
+sections:
+  order:
+      kokinwakashu
+      gosenwakashu
   kokinwakashu:
     order:
       - preface.md
