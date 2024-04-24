@@ -533,6 +533,8 @@ left: 50%;
 	list-style: none;
 	font-size: 150%;
 	display: inline-block;
+	background-color: rgba(227,246,205,0.5);
+	border-radius: 0.5em;
 }
 .w_author {
 	list-style: none;
@@ -540,6 +542,8 @@ left: 50%;
 	margin-left: 1em;
 	display: inline-block;
 	vertical-align: top;
+	background-color: rgba(227,246,205,0.5);
+	border-radius: 0.5em;
 }
 .w_kotobagaki 
 {
@@ -548,7 +552,8 @@ left: 50%;
 	text-align: right;
 	margin-left:17%;
 	padding: 5px;
-/*	background-color: #E9F5D4; */
+	background-color: rgba(227,246,205,0.5);
+	border-radius: 0.5em;
 }
 .w_kai
 {
@@ -557,7 +562,18 @@ left: 50%;
 	text-align: left;
 	margin-left:17%;
 	padding: 5px;
-/*	background-color: #E9F5D4; */
+	background-color: rgba(227,246,205,0.5);
+	border-radius: 0.5em;
+}
+.w_kaisetu
+{
+	list-style: none;
+	font-size: 100%;
+	text-align: left;
+	margin-left:17%;
+	padding: 5px;
+	background-color: rgba(227,246,205,0.5);
+	border-radius: 0.5em;
 }
 
 .w_waka {
