@@ -71,7 +71,7 @@
 
 		<section class="main">
 			<div class="page-header">
-				<h2>{% if page.collection %}古今和歌集: {{ page.label }}{% else %}{{ '' }}{% endif %}</h2>
+				{% if page.collection %}<h2>古今和歌集: {{ page.label }}{% else %}{{ '' }}</h2>{% endif %}
 			</div>
 			<article class="content">
 				{{ content }}
