@@ -179,8 +179,8 @@ $nav-image: $baseurl + "/images/menu.svg";
 	h2,
 	h3 {
 		margin: 0;
-		line-height: 1.2;
-		letter-spacing: -1px;
+		line-height: 1.4;
+		letter-spacing: 2px;
 	}
 
 	h2 {
@@ -192,12 +192,13 @@ $nav-image: $baseurl + "/images/menu.svg";
 		letter-spacing: 0;
 		padding: 0.5rem 1.5rem;
 		border-radius: 1rem;
-		background-color: #B7CB8D;
+		background-color: rgba(227,246,205,0.5);
 	}
 
 	h3 {
 		font-size: 4rem;
 		margin-left: -4px;
+		background-color: rgba(227,246,205,0.5);
 	}
 
 	@media (min-width: $mobile-break) {
@@ -214,6 +215,10 @@ $nav-image: $baseurl + "/images/menu.svg";
 		margin-top: 55px;
 	}
 }
+
+.content{
+}
+
 
 nav,
 header > form {
@@ -514,79 +519,107 @@ left: 50%;
 }
 
 
-
+p {
+	border-radius: 0.8em;
+	padding: 0.8rem 1.6rem;
+	margin:0;
+}
 
 .wakas {
 	list-style: none;
 	padding: 0;
+	margin:0;
+}
+
+.wakas > li {
+margin: 4rem 0;
 }
 
 .waka {
 	list-style: none;
-	padding: 1em 2em;
+	padding: 2em 2em;
 	border-left: 5px solid #d7ebc3;
 	border-radius: 2rem;
 	background-color: #B7CB8D;
+	margin: 0;
 }
 
 .w_num {
+	padding: 0.4rem 1rem;
 	list-style: none;
 	font-size: 150%;
 	display: inline-block;
 	background-color: rgba(227,246,205,0.5);
-	border-radius: 0.5em;
+	border-radius: 1rem;
 }
 .w_author {
+	padding: 1rem;
 	list-style: none;
 	font-size: 120%;
+	padding: 0.4rem;
 	margin-left: 1em;
 	display: inline-block;
 	vertical-align: top;
 	background-color: rgba(227,246,205,0.5);
-	border-radius: 0.5em;
+	border-radius: 1rem;
 }
-.w_kotobagaki 
-{
+.w_kotobagaki {
 	list-style: none;
-	font-size: 100%;
 	text-align: right;
-	margin-left:17%;
-	padding: 5px;
-	background-color: rgba(227,246,205,0.5);
-	border-radius: 0.5em;
+	padding: 1rem 2rem;
 }
-.w_kai
-{
+
+.w_kotobagaki > p {
+	display: inline-block;
+	font-size: 100%;
+	background-color: rgba(227,246,205,0.5);
+}
+
+
+.w_kai{
+	text-align: left;
+	margin-top: 1em;
+	padding: 0.5rem;
+}
+
+.w_kai > p {
+	display: inline-block;
 	list-style: none;
 	font-size: 100%;
-	text-align: left;
-	margin-left:17%;
-	padding: 5px;
+	margin-left: 3rem;
+	margin-right: 3rem;
 	background-color: rgba(227,246,205,0.5);
-	border-radius: 0.5em;
+	border-radius: 0.8em;
 }
 .w_kaisetu
 {
 	list-style: none;
 	font-size: 100%;
 	text-align: left;
+	margin-top: 0.5em;
 	margin-left:17%;
-	padding: 5px;
-	background-color: rgba(227,246,205,0.5);
-	border-radius: 0.5em;
+	padding: 0.5rem;
+	border-radius: 0.8em;
 }
-
+.w_kaisetu > p {
+	display: inline-block;
+	list-style: none;
+	font-size: 100%;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	background-color: rgba(227,246,205,0.5);
+	border-radius: 0.8em;
+}
 .w_waka {
 	list-style: none;
-	margin-block-start: 1rem;
-	margin-block-end: 1rem;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
+	padding: 0.4rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	background-color: rgba(227,246,205,0.5);
 	border-radius: 0.5em;
 	line-height: 140%;
 	font-size: 140%;
-	padding: 0.6em 1.2em 0.6em 2.4em;
+	padding: 0.6em 1em 0.6em 2em;
 	text-align-last: right;
 	text-indent: -1em;
 	

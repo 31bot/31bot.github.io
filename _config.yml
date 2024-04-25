@@ -71,7 +71,7 @@ languages: ["ja"]
 collections:
   kokinwakashu:
     order:
-      - preface.md
+      - preface.html
       - vol1.html
       - vol2.html
       - vol3.html
