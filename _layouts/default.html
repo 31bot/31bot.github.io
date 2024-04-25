@@ -70,9 +70,11 @@
 		</header>
 
 		<section class="main">
-			<div class="page-header">
-				{% if page.collection %}<h2>古今和歌集: {{ page.label }}{% else %}{{ '' }}</h2>{% endif %}
-			</div>
+			{% if page.collection %}
+				<div class="page-header">
+					<h2>古今和歌集: {{ page.label }}</h2>
+				</div>
+			{% endif %}
 			<article class="content">
 				{{ content }}
 			</article>
