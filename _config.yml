@@ -45,16 +45,16 @@ exclude:
 defaults:
   -
     scope:
-      path: ""
+      path: "*/*/"
     values:
-      layout: default
+      layout: single-layout
       image: https://31bot.github.io/OGP.png
       locale: ja_JP
   -
     scope:
       path: ""
     values:
-      layout: single-layout
+      layout: default
       image: https://31bot.github.io/OGP.png
       locale: ja_JP
 
