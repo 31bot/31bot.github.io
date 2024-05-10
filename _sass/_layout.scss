@@ -615,15 +615,20 @@ margin: 4rem 0;
 	padding: 0.4rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	font-weight: 950;
 	background-color: rgba(227,246,205,0.5);
-	border-radius: 0.5rem;
+	border-radius: 1rem;
 	line-height: 140%;
 	font-size: 140%;
 	padding: 0.6rem 1rem 0.6rem 2rem;
-	text-align-last: right;
-	text-indent: -1rem;
-	
+	text-align: center;
 }
+
+.w1{position: relative; left: -4rem;}
+.w2{position: relative; left: -2rem;}
+.w3{position: relative; left: 0;}
+.w4{position: relative; left: 2rem;}
+.w5{position: relative; left: 4rem;}
 
 ul,ol{
 margin-top: 0;
