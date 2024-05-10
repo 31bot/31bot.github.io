@@ -465,6 +465,7 @@ img {
 		font-size: 18px;
 		cursor: pointer;
 		background-color: #f7e064;
+		border-radius: 0.8rem;
 		color: #333;
 		box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
 
@@ -650,4 +651,16 @@ margin: 4rem 0;
 ul,ol{
 margin-top: 0;
 margin-bottom: 0;
+}
+
+
+@media (max-width: $mobile-break){
+	.w_each_waka{
+		text-align: left;
+	}
+	.w1{position: relative; left: 0;}
+	.w2{position: relative; left: 1rem;}
+	.w3{position: relative; left: 2rem;}
+	.w4{position: relative; left: 3rem;}
+	.w5{position: relative; left: 4rem;}
 }
