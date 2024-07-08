@@ -2,7 +2,7 @@
 # Site
 
 title: 三十一文字
-url: "https://31bot.github.io"
+url: "https://31bot.felina.cc"
 baseurl:
 google_analytics_key: "G-RXL4DPPZFH"
 show_full_navigation: true
@@ -10,7 +10,7 @@ show_full_navigation: true
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Traditional Japanese Poems - Waka
-url: https://31bot.github.io
+url: https://31bot.felina.cc
 locale: ja_JP
 author:
   name:
@@ -48,14 +48,14 @@ defaults:
       path: "*/*/"
     values:
       layout: single-layout
-      image: https://31bot.github.io/OGP.png
+      image: https://31bot.felina.cc/OGP.png
       locale: ja_JP
   -
     scope:
       path: ""
     values:
       layout: default
-      image: https://31bot.github.io/OGP.png
+      image: https://31bot.felina.cc/OGP.png
       locale: ja_JP
 
 
