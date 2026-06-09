@@ -1,6 +1,13 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+.jekyll-cache/
 .DS_Store
 _drafts
 .ruby-version
+.bundle/
+vendor/bundle/
+*.log
+
+
+
